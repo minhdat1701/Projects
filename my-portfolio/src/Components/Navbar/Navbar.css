@@ -1,0 +1,131 @@
+.navbar {
+  background-color: #21232c;
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+.navbar-content .logo {
+  text-decoration: none;
+}
+.navbar-content .logo h4 {
+  font-size: 40px;
+  color: #00cc8f;
+  color: #fff;
+}
+.navbar-content .logo h4 span {
+  font-size: 40px;
+  color: #00cc8f;
+}
+.navbar-content ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.navbar-content .menu-item {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.navbar-content .menu-item:hover {
+  color: #00cc8f;
+}
+/* .navbar-content .contact-btn {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #a993fe;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  border-radius: 5px;
+}
+.navbar-content .contact-btn:hover {
+  color: #a993fe;
+  background-color: #000;
+  outline: 1.5px solid #a993fe;
+} */
+.navbar-menu {
+  padding: 8px 12px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #a993fe;
+  display: none;
+}
+.active-link {
+  color: #00cc8f !important;
+  font-size: 24px !important;
+}
+.active-link:hover {
+  color: #ffffff !important;
+  ;
+}
+@media (max-width: 769px) {
+  .navbar-content .logo h4 {
+    font-size: 30px;
+    color: #fff;
+  }
+  .navbar-content ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #21232c;
+    width: 50%;
+    height: 100%;
+    padding: 100px 0;
+  }
+  .navbar-content ul.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #21232c;
+    width: 50%;
+    height: 100%;
+    padding: 100px 0;
+  }
+  .navbar-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .navbar-menu:hover {
+    color: #a993fe;
+    background-color: #000;
+    outline: 1.5px solid #a993fe;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 4px 8px;
+  }
+  
+}
+@media (max-width: 1325px) {
+  .navbar {
+    padding: 5px 50px;
+  }
+}
